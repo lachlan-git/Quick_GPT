@@ -1,11 +1,6 @@
 
-import customtkinter
-from tkinter import ttk
-
 import textwrap
 import sys
-customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
 import time
 
 import pyautogui
@@ -20,7 +15,6 @@ class App(customtkinter.CTk):
         self.widget_width = 475
         self.proc_options = proc_options
         self.prompt = prompt
-
         self.listener = listener
 
         # configure window
